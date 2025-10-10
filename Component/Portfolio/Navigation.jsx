@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import resumePdf from '../../Resource/NikhilJain\'s_Resume.pdf';
 import { Menu, X } from 'lucide-react';
 
 export default function Navigation({ activeSection }) {
@@ -47,9 +48,8 @@ export default function Navigation({ activeSection }) {
                 </button>
               ))}
               <a
-                href="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_68ad37dc862220a168c7aff4/6e1b8880a_NikhilJains_Resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
+                href={resumePdf}
+                download
                 className="ml-4 px-4 py-2 bg-transparent border-2 border-[#64FFDA] text-[#64FFDA] rounded-lg text-sm font-medium hover:bg-[#64FFDA]/10 transition-all duration-300"
               >
                 Resume
@@ -84,9 +84,8 @@ export default function Navigation({ activeSection }) {
                 </button>
               ))}
               <a
-                href="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_68ad37dc862220a168c7aff4/6e1b8880a_NikhilJains_Resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
+                href={resumePdf}
+                download
                 className="block w-full text-center px-3 py-2 border-2 border-[#64FFDA] text-[#64FFDA] rounded-lg text-base font-medium hover:bg-[#64FFDA]/10 transition-all duration-300 mt-4"
               >
                 Resume
