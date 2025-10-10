@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import resumePdf from '../../Resource/NikhilJain\'s_Resume.pdf';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Mail, Phone, MapPin, Github, Linkedin, Download, Copy, Check } from 'lucide-react';
@@ -115,9 +116,8 @@ export default function ContactSection() {
               <div>
                 <p className="text-gray-300 text-sm mb-2 font-medium">Resume</p>
                 <a
-                  href="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_68ad37dc862220a168c7aff4/6e1b8880a_NikhilJains_Resume.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href={resumePdf}
+                  download
                   className="text-[#64FFDA] text-xs hover:underline font-medium"
                 >
                   Download PDF
