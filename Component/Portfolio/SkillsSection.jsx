@@ -162,7 +162,7 @@ export default function SkillsSection() {
         {/* Stats */}
         <div className="grid md:grid-cols-3 gap-6">
           <Card className={`${isDark ? 'bg-gradient-to-br from-[#112240] to-[#1a3a52] border-[#64FFDA]/30' : 'bg-gradient-to-br from-blue-50 to-blue-100 border-blue-300/30'} p-6 text-center hover:transform hover:scale-105 transition-all duration-300`}>
-            <p className={`text-5xl font-bold mb-2 ${isDark ? 'text-[#64FFDA]' : 'text-blue-600'}`}>2.5+</p>
+            <p className={`text-5xl font-bold mb-2 ${isDark ? 'text-[#64FFDA]' : 'text-blue-600'}`}>3+</p>
             <p className={`font-medium ${isDark ? 'text-gray-200' : 'text-gray-700'}`}>Years Experience</p>
           </Card>
           <Card className={`${isDark ? 'bg-gradient-to-br from-[#112240] to-[#1a3a52] border-[#64FFDA]/30' : 'bg-gradient-to-br from-blue-50 to-blue-100 border-blue-300/30'} p-6 text-center hover:transform hover:scale-105 transition-all duration-300`}>
