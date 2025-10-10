@@ -97,8 +97,8 @@ export default function ProjectsSection() {
                 <div className="mb-6">
                   <h4 className={`text-sm font-semibold mb-3 uppercase tracking-wide ${isDark ? 'text-[#64FFDA]' : 'text-blue-600'}`}>Key Features</h4>
                   <div className="flex flex-wrap gap-2">
-                    {project.highlights.map((highlight, idx) => (
-                      <Badge key={idx} className={`text-sm font-semibold px-3 py-2 ${isDark ? 'bg-gradient-to-r from-[#64FFDA]/20 to-[#4FD1C7]/20 text-[#64FFDA] border border-[#64FFDA]/40' : 'bg-gradient-to-r from-blue-500/20 to-blue-600/20 text-blue-700 border border-blue-500/40'}`}>
+                  {project.highlights.map((highlight, idx) => (
+                      <Badge key={idx} className={`text-sm font-semibold px-3 py-2 ${isDark ? 'bg-gradient-to-r from-[#64FFDA]/20 to-[#4FD1C7]/20 text-white border border-[#64FFDA]/40' : 'bg-gradient-to-r from-blue-500/20 to-blue-600/20 text-blue-700 border border-blue-500/40'}`}>
                         {highlight}
                       </Badge>
                     ))}
@@ -114,7 +114,7 @@ export default function ProjectsSection() {
                 )}
 
                 {project.impact && (
-                  <Badge className={`w-fit font-semibold px-4 py-2 text-sm ${isDark ? 'bg-gradient-to-r from-green-500/20 to-green-600/20 text-green-300 border border-green-500/60' : 'bg-gradient-to-r from-green-500/20 to-green-600/20 text-green-700 border border-green-500/60'}`}>
+                  <Badge className={`w-fit font-semibold px-4 py-2 text-sm ${isDark ? 'bg-gradient-to-r from-green-500/20 to-green-600/20 text-white border border-green-500/60' : 'bg-gradient-to-r from-green-500/20 to-green-600/20 text-green-700 border border-green-500/60'}`}>
                     📈 {project.impact}
                   </Badge>
                 )}
@@ -126,7 +126,7 @@ export default function ProjectsSection() {
                   {project.technologies.map((tech, idx) => (
                     <Badge 
                       key={idx}
-                      className={`text-sm font-medium px-3 py-2 transition-all duration-300 ${isDark ? 'bg-gradient-to-r from-[#0A192F] to-[#112240] text-[#64FFDA] border border-[#64FFDA]/40 hover:border-[#64FFDA] hover:bg-[#64FFDA]/10' : 'bg-gradient-to-r from-blue-50 to-blue-100 text-blue-700 border border-blue-300 hover:border-blue-500 hover:bg-blue-200'}`}
+                      className={`text-sm font-medium px-3 py-2 transition-all duration-300 ${isDark ? 'bg-gradient-to-r from-[#0A192F] to-[#112240] text-white border border-[#64FFDA]/40 hover:border-[#64FFDA] hover:bg-[#64FFDA]/10' : 'bg-gradient-to-r from-blue-50 to-blue-100 text-blue-700 border border-blue-300 hover:border-blue-500 hover:bg-blue-200'}`}
                     >
                       {tech}
                     </Badge>

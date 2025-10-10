@@ -69,11 +69,11 @@ export default function ExperienceSection() {
                   <p className={`text-lg font-medium ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>{exp.description}</p>
                 </div>
                 <div className="flex flex-col sm:flex-row lg:flex-col items-start gap-3">
-                  <Badge className={`px-4 py-2 text-sm font-bold shadow-lg ${isDark ? 'bg-gradient-to-r from-[#64FFDA]/20 to-[#4FD1C7]/20 text-[#64FFDA] border border-[#64FFDA]/60' : 'bg-gradient-to-r from-blue-500/20 to-blue-600/20 text-blue-600 border border-blue-500/60'}`}>
+                  <Badge className={`px-4 py-2 text-sm font-bold shadow-lg ${isDark ? 'bg-gradient-to-r from-[#64FFDA]/20 to-[#4FD1C7]/20 text-white border border-[#64FFDA]/60' : 'bg-gradient-to-r from-blue-500/20 to-blue-600/20 text-blue-600 border border-blue-500/60'}`}>
                     <Calendar className="w-4 h-4 mr-2" />
                     {exp.period}
                   </Badge>
-                  <Badge className={`px-4 py-2 text-sm font-bold shadow-lg ${isDark ? 'bg-gradient-to-r from-blue-500/20 to-blue-600/20 text-blue-300 border border-blue-500/60' : 'bg-gradient-to-r from-green-500/20 to-green-600/20 text-green-600 border border-green-500/60'}`}>
+                  <Badge className={`px-4 py-2 text-sm font-bold shadow-lg ${isDark ? 'bg-gradient-to-r from-blue-500/20 to-blue-600/20 text-white border border-blue-500/60' : 'bg-gradient-to-r from-green-500/20 to-green-600/20 text-green-600 border border-green-500/60'}`}>
                     {exp.type}
                   </Badge>
                 </div>
@@ -95,7 +95,7 @@ export default function ExperienceSection() {
                   {exp.technologies.map((tech, idx) => (
                     <Badge 
                       key={idx}
-                      className={`px-4 py-2 text-sm font-medium transition-all duration-300 ${isDark ? 'bg-gradient-to-r from-[#0A192F] to-[#112240] text-[#64FFDA] border border-[#64FFDA]/40 hover:border-[#64FFDA] hover:bg-[#64FFDA]/10' : 'bg-gradient-to-r from-blue-50 to-blue-100 text-blue-700 border border-blue-300 hover:border-blue-500 hover:bg-blue-200'}`}
+                      className={`px-4 py-2 text-sm font-medium transition-all duration-300 ${isDark ? 'bg-gradient-to-r from-[#0A192F] to-[#112240] text-white border border-[#64FFDA]/40 hover:border-[#64FFDA] hover:bg-[#64FFDA]/10' : 'bg-gradient-to-r from-blue-50 to-blue-100 text-blue-700 border border-blue-300 hover:border-blue-500 hover:bg-blue-200'}`}
                     >
                       {tech}
                     </Badge>
