@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import resumePdf from '../../Resource/NikhilJain\'s_Resume.pdf';
 import { Menu, X } from 'lucide-react';
+
+const resumeUrl = `${import.meta.env.BASE_URL}resume.pdf`;
 
 export default function Navigation({ activeSection }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,7 +49,7 @@ export default function Navigation({ activeSection }) {
                 </button>
               ))}
               <a
-                href={resumePdf}
+                href={resumeUrl}
                 download
                 className="ml-4 px-4 py-2 bg-transparent border-2 border-[#64FFDA] text-[#64FFDA] rounded-lg text-sm font-medium hover:bg-[#64FFDA]/10 transition-all duration-300"
               >
@@ -84,7 +85,7 @@ export default function Navigation({ activeSection }) {
                 </button>
               ))}
               <a
-                href={resumePdf}
+                href={resumeUrl}
                 download
                 className="block w-full text-center px-3 py-2 border-2 border-[#64FFDA] text-[#64FFDA] rounded-lg text-base font-medium hover:bg-[#64FFDA]/10 transition-all duration-300 mt-4"
               >
