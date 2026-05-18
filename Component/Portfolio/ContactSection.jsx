@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import resumePdf from '../../Resource/NikhilIUpdatedResume.pdf';
 import { Card } from '@/components/ui/card';
+
+const resumeUrl = `${import.meta.env.BASE_URL}resume.pdf`;
 import { Button } from '@/components/ui/button';
 import { Mail, Phone, MapPin, Github, Linkedin, Download, Copy, Check } from 'lucide-react';
 import { useScrollAnimation } from '../../src/hooks/useScrollAnimation';
@@ -116,7 +117,7 @@ export default function ContactSection() {
               <div>
                 <p className="text-gray-300 text-sm mb-2 font-medium">Resume</p>
                 <a
-                  href={resumePdf}
+                  href={resumeUrl}
                   download
                   className="text-[#64FFDA] text-xs hover:underline font-medium"
                 >
