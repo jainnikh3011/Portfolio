@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Card } from '@/components/ui/card';
-
-const resumeUrl = `${import.meta.env.BASE_URL}resume.pdf`;
 import { Button } from '@/components/ui/button';
 import { Mail, Phone, MapPin, Github, Linkedin, Download, Copy, Check } from 'lucide-react';
 import { useScrollAnimation } from '../../src/hooks/useScrollAnimation';
+
+const resumeUrl = `${import.meta.env.BASE_URL}resume.pdf`;
 
 export default function ContactSection() {
   const [copiedEmail, setCopiedEmail] = useState(false);
