@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import resumePdf from '../../Resource/NikhilJain\'s_Resume.pdf';
+import resumePdf from '../../Resource/NikhilIUpdatedResume.pdf';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Mail, Phone, MapPin, Github, Linkedin, Download, Copy, Check } from 'lucide-react';

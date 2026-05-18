@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import resumePdf from '../../Resource/NikhilJain\'s_Resume.pdf';
+import resumePdf from '../../Resource/NikhilIUpdatedResume.pdf';
 import { Menu, X } from 'lucide-react';
 
 export default function Navigation({ activeSection }) {
